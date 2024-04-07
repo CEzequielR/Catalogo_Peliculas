@@ -1,12 +1,12 @@
 
 package mx.com.gm.peliculas.domain;
 
-public class Peliculas {
+public class Pelicula {
     private String nombre;
 
-    public Peliculas() {
+    public Pelicula() {
     }
-    public Peliculas(String nombre) {
+    public Pelicula(String nombre) {
         this.nombre = nombre;
     }
 
@@ -20,7 +20,7 @@ public class Peliculas {
 
     @Override
     public String toString() {
-        return "Peliculas{" + "nombre=" + nombre + '}';
+        return nombre;
     }
     
 }
