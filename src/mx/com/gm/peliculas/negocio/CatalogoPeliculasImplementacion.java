@@ -16,35 +16,37 @@ public class CatalogoPeliculasImplementacion implements ICatalogoPeliculas {
 
     private final IAccesoDatos datos;
 
-    public CatalogoPeliculasImplementacion(IAccesoDatos datos) {
+    public CatalogoPeliculasImplementacion() {
         this.datos = new AccesoDatosImplementacion();
     }
-    
+
     @Override
     public void agregarPeliculas(String nombrePelicula) {
+        Pelicula pelicula = new Pelicula(nombrePelicula);
+        boolean anexar = false;
         try {
-            Pelicula pelicula = new Pelicula(nombrePelicula);
-            boolean anexar = false;
+
             anexar = datos.existe(NOMBRE_RECURSO);
+            datos.escribir(pelicula, NOMBRE_RECURSO, anexar);
         } catch (AccesoDatosEx ex) {
             System.out.println("Error de acceso de datos");
             ex.printStackTrace(System.out);
         }
-        
+
     }
 
     @Override
     public void listarPeliculas() {
         try {
             var peliculas = this.datos.listar(NOMBRE_RECURSO);
-            for (var pelicula: peliculas) {
-                System.out.println("peliculas = " + peliculas);
+            for (var pelicula : peliculas) {
+                System.out.println("peliculas = " + pelicula);
             }
         } catch (AccesoDatosEx ex) {
             System.out.println("Error de acceso datos");
             ex.printStackTrace(System.out);
         }
-        
+
     }
 
     @Override
@@ -56,7 +58,7 @@ public class CatalogoPeliculasImplementacion implements ICatalogoPeliculas {
             System.out.println("Error en Lectura de datos");
             ex.printStackTrace(System.out);
         }
-        System.out.println("Resultado: "+resultado);
+        System.out.println("Resultado: " + resultado);
     }
 
     @Override
@@ -65,8 +67,8 @@ public class CatalogoPeliculasImplementacion implements ICatalogoPeliculas {
             if (this.datos.existe(NOMBRE_RECURSO)) {
                 datos.borrar(NOMBRE_RECURSO);
                 datos.crear(NOMBRE_RECURSO);
-                
-            }else{
+
+            } else {
                 datos.crear(NOMBRE_RECURSO);
             }
         } catch (AccesoDatosEx ex) {
@@ -74,5 +76,5 @@ public class CatalogoPeliculasImplementacion implements ICatalogoPeliculas {
             ex.printStackTrace(System.out);
         }
     }
-    
+
 }

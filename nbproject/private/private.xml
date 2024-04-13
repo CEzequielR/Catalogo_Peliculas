@@ -3,11 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Lenovo/OneDrive/Documents/Ezequiel/Universidad_Java/Proyectos/ProyectoFinal_ProgramacionConJava/src/mx/com/gm/peliculas/datos/AccesoDatos.java</file>
-            <file>file:/C:/Users/Lenovo/OneDrive/Documents/Ezequiel/Universidad_Java/Proyectos/ProyectoFinal_ProgramacionConJava/src/mx/com/gm/peliculas/negocio/CatalogoPeliculas.java</file>
+            <file>file:/C:/Users/Lenovo/OneDrive/Documents/Ezequiel/Universidad_Java/Proyectos/ProyectoFinal_ProgramacionConJava/src/mx/com/gm/peliculas/datos/IAccesoDatos.java</file>
             <file>file:/C:/Users/Lenovo/OneDrive/Documents/Ezequiel/Universidad_Java/Proyectos/ProyectoFinal_ProgramacionConJava/src/mx/com/gm/peliculas/negocio/CatalogoPeliculasImplementacion.java</file>
             <file>file:/C:/Users/Lenovo/OneDrive/Documents/Ezequiel/Universidad_Java/Proyectos/ProyectoFinal_ProgramacionConJava/src/mx/com/gm/peliculas/datos/AccesoDatosImplementacion.java</file>
-            <file>file:/C:/Users/Lenovo/OneDrive/Documents/Ezequiel/Universidad_Java/Proyectos/ProyectoFinal_ProgramacionConJava/src/mx/com/gm/peliculas/domain/Peliculas.java</file>
+            <file>file:/C:/Users/Lenovo/OneDrive/Documents/Ezequiel/Universidad_Java/Proyectos/ProyectoFinal_ProgramacionConJava/src/mx/com/gm/peliculas/presentacion/CatalogoPeliculasPresentacion.java</file>
         </group>
     </open-files>
 </project-private>
